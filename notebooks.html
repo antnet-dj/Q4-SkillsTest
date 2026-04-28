@@ -6,8 +6,11 @@
 <style>
     body {
         margin: 0;
+        height: 100vh;
+        background-size: cover;
+        background-position: center;
+        animation: bgSlide 20s infinite;
         font-family: Arial, sans-serif;
-        background: linear-gradient(to right, #f3f3f3, #e6e6e6);
     }
 
     .sidebar {
@@ -76,6 +79,15 @@
     .progress {
         height: 8px;
         border-radius: 10px;
+    }
+
+    @keyframes bgSlide {
+    0%   { background-image: url('https://images.squarespace-cdn.com/content/v1/664c7ae50eea9c731b37e817/42cc9679-9656-4904-b843-0554ac012475/O.B.+Montessori+Center+Angeles+Campus?format=2500w'); }
+    20%  { background-image: url('https://images.squarespace-cdn.com/content/v1/664c7ae50eea9c731b37e817/0ac7bf3e-e1f0-47e7-b212-e24b8696f03c/O.B.+Montessori+Center+Fairview+Campus?format=2500w'); }
+    40%  { background-image: url('https://images.squarespace-cdn.com/content/v1/664c7ae50eea9c731b37e817/158c4532-1ab3-4ce5-8ed4-f59ce7e847d2/O.B.+Montessori+Center+Greenhills+Campus?format=2500w'); }
+    60%  { background-image: url('https://images.squarespace-cdn.com/content/v1/664c7ae50eea9c731b37e817/c4c28d4b-1195-400f-9ecb-ef207ac460cb/O.B.+Montessori+Center+LAS+PI%C3%91AS+CAMPUS?format=2500w'); }
+    80%  { background-image: url('https://images.squarespace-cdn.com/content/v1/664c7ae50eea9c731b37e817/9e09a83b-d370-4734-92f3-7d23593a6757/O.B.+Montessori+Center+Sta.+Ana+Campus?format=2500w'); }
+    100% { background-image: url('https://images.squarespace-cdn.com/content/v1/664c7ae50eea9c731b37e817/42cc9679-9656-4904-b843-0554ac012475/O.B.+Montessori+Center+Angeles+Campus?format=2500w'); }
     }
 </style>
 </head>
