@@ -40,10 +40,11 @@ body {
     <h1>Login</h1>
     <p>Enter username and password</p>
 
+<form onsubmit="login(); return false;">
     <input type="text" id="username" class="form-control mb-3" placeholder="Username">
     <input type="password" id="password" class="form-control mb-3" placeholder="Password">
-
-    <button class="btn btn-primary" onclick="login()">Login</button>
+    <button type="submit" class="btn btn-primary">Login</button>
+</form>
 </div>
 
 <script>
@@ -53,6 +54,7 @@ function login() {
 
     if(user === "rainbowdash" && pass === "applejack") {
         alert("Login Successful!");
+        window.location.href = "notebooks.html";
     } else {
         alert("Wrong username or password!");
     }
