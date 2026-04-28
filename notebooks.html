@@ -6,11 +6,10 @@
 <style>
     body {
         margin: 0;
-        height: 100vh;
-        background-size: cover;
-        background-position: center;
-        animation: bgSlide 20s infinite;
+        min-height: 100vh;
         font-family: Arial, sans-serif;
+        background: linear-gradient(135deg, #dbeafe, #f3f4f6, #e0e7ff);
+        background-attachment: fixed;
     }
 
     .sidebar {
@@ -53,23 +52,23 @@
     }
 
     .subject-card {
-        background: rgba(255, 255, 255, 0.9);
+        background: rgba(255, 255, 255, 0.95);
         border-radius: 18px;
-        box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+        box-shadow: 0 4px 10px rgba(0,0,0,0.12);
         padding: 20px;
-        transition: all 0.3s ease-in-out;
+        transition: transform 0.25s ease, box-shadow 0.25s ease;
         cursor: pointer;
         margin-bottom: 20px;
         text-align: center;
-        border: 2px solid transparent;
-        backdrop-filter: blur(5px);
+        border: 1px solid rgba(255,255,255,0.4);
+        position: relative;
+        overflow: hidden;
     }
 
     .subject-card:hover {
-    transform: translateY(-8px) scale(1.03);
-    box-shadow: 0 0 20px rgba(0, 123, 255, 0.6),
-                0 0 40px rgba(0, 123, 255, 0.3);
-    border: 2px solid rgba(0,123,255,0.7);
+        transform: translateY(-5px);
+        box-shadow: 0 8px 18px rgba(0,123,255,0.25);
+        border-color: rgba(0,123,255,0.3);
     }
     /* references: https://www.w3schools.com/tools/tool_css_transform.php and https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/transform */
 
